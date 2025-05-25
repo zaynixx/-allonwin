@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>AllonWin | Играть</title>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <script defer src="/main.js"></script>
+  <script defer src="play.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-green-900 text-white p-4 min-h-screen">
+  <h1 class="text-xl mb-4">🎮 Выбор режима игры</h1>
+  <div class="space-x-2 mb-6">
+    <button onclick="joinGame(2)" class="bg-blue-700 px-4 py-2 rounded">1 на 1</button>
+    <button onclick="joinGame(6)" class="bg-blue-700 px-4 py-2 rounded">6 игроков</button>
+    <button onclick="joinGame(9)" class="bg-blue-700 px-4 py-2 rounded">9 игроков</button>
+  </div>
+
+  <div id="table" class="hidden border border-white p-4 rounded-lg">
+    <h2 class="text-lg mb-2">🃏 Стол</h2>
+    <div id="players" class="grid grid-cols-3 gap-4"></div>
+    <p id="status" class="mt-4 text-yellow-300"></p>
+  </div>
+</body>
+</html>

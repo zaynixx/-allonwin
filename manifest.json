@@ -1,0 +1,13 @@
+{
+  "name": "AllonWin Poker",
+  "description": "Онлайн покер",
+  "icons": [
+    {
+      "src": "https://yourapp.com/icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "https://yourapp.com/",
+  "display": "standalone"
+}
